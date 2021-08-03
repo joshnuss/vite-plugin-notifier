@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-notifier",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Show an icon when HMR completes.",
   "main": "index.js",
   "scripts": {
