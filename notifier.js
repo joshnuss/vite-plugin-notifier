@@ -7,6 +7,7 @@ if (import.meta.hot) {
     element.style.position = 'fixed'
     element.style.right = 5
     element.style.top = 5
+    element.style.zIndex = 1000
     element.style.padding = 5
     element.style.width = '20px'
     element.style.height = '20px'
