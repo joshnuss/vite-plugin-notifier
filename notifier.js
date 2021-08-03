@@ -7,7 +7,6 @@ if (import.meta.hot) {
     element.style.position = 'fixed'
     element.style.right = 5
     element.style.top = 5
-    element.style.boxSizing = 'bord"er-box'
     element.style.padding = 5
     element.style.width = '20px'
     element.style.height = '20px'
