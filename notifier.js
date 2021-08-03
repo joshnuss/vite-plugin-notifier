@@ -29,14 +29,17 @@ if (import.meta.hot) {
     }
     element.style.transition = null
     element.style.opacity = 0
+    element.style.transform = 'scale(0.3)'
 
     setTimeout(() => {
-      element.style.transition = 'all 0.5s ease-in'
+      element.style.transition = 'all 0.3s ease-in'
       element.style.opacity = 1
+      element.style.transform = 'scale(1)'
     }, 200)
 
     timer = setTimeout(() => {
       element.style.opacity = 0
+      element.style.transform = 'scale(0.3)'
     }, 3000)
   }
 
