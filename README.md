@@ -3,6 +3,10 @@ vite-plugin-notifier
 
 Provides visual feedback that HMR has completed. Only runs in dev mode.
 
+## Example
+
+![example](https://github.com/joshnuss/vite-plugin-notifier/blob/master/example.gif?raw=true)
+
 ## Setup
 
 To install the package:
