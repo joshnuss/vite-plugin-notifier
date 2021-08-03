@@ -6,10 +6,10 @@ if (import.meta.hot) {
     element = document.createElement('div')
     element.id = 'vite-update-notification'
     element.style.position = 'fixed'
-    element.style.right = 25
-    element.style.bottom = 25
+    element.style.right = "25px"
+    element.style.bottom = "25px"
     element.style.zIndex = 1000
-    element.style.padding = 5
+    element.style.padding = '5px'
     element.style.display = 'flex'
     element.style.justifyContent = "center"
     element.style.alignItems = "center"
@@ -17,7 +17,7 @@ if (import.meta.hot) {
     element.style.height = '30px'
     element.style.borderRadius = '50%'
     element.style.background = '#0a0'
-    element.style.color = '#ddd'
+    element.style.color = '#eee'
     element.style.boxShadow = '1px 1px #ddd'
     element.innerHTML = `
 <svg xmlns="http://www.w3.org/2000/svg" style="width: 25px; height: 25px" viewBox="0 0 20 20" fill="currentColor">
