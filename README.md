@@ -11,7 +11,7 @@ To install the package:
 npm i --save-dev vite-plugin-notifier
 ```
 
-Then, in your `vite.config.js`, add the plugin:
+Then add the plugin to your `vite.config.js`:
 
 ```javascript
 import notifier from 'vite-plugin-notifier'
