@@ -1,5 +1,6 @@
 if (import.meta.hot) {
   let element = document.getElementById('vite-update-notification')
+  let timer
 
   if (!element) {
     element = document.createElement('div')
@@ -11,7 +12,6 @@ if (import.meta.hot) {
     element.style.padding = 5
     element.style.width = '20px'
     element.style.height = '20px'
-    element.style.transition = 'all 0.5s ease-in'
     element.style.borderRadius = '50%'
     element.style.background = '#0a0'
     element.style.color = '#ddd'
@@ -24,9 +24,18 @@ if (import.meta.hot) {
   }
 
   function update() {
-    element.style.opacity = 1
+    if (timer) {
+      clearTimeout(timer)
+    }
+    element.style.transition = null
+    element.style.opacity = 0
 
     setTimeout(() => {
+      element.style.transition = 'all 0.5s ease-in'
+      element.style.opacity = 1
+    }, 200)
+
+    timer = setTimeout(() => {
       element.style.opacity = 0
     }, 3000)
   }
